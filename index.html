@@ -178,7 +178,7 @@
       <div class="container_player">
         <div class="music-box">
           <!-- <img src="images/avatar.jpg" /> -->
-          <img src="img/01.png" />
+          <img src="img/01.jpg" />
           <div class="mask">
             <div class="mplayer" onclick="play()">
               <i class="fa">
@@ -365,7 +365,7 @@
           Math.floor(Math.random() * WIDTH),
           Math.floor(Math.random() * HEIGHT)
         );
-        //stars[i].draw();
+        stars[i].draw();
       }
       ctx.shadowBlur = 0;
       animate();
@@ -433,16 +433,21 @@
     }
     // 打印字
     const words = [
-      "❤2021新年快乐！",
-      "❉我知道现在是时候。",
-      "❉但这并不能阻止我们心存感激。",
-      "❉我很感激今年收到的所有祝福。",
-      "❉感谢一路走来的挑战。",
-      "❉我感谢所有的爱。",
-      "❉在新的一年里不要太多。",
-      "❉我只想让读这篇文章的人感到被爱。",
-      "❉愿你得到你想要的一切。",
-      "❉让你的家庭和生活充满幸福。",
+      "❤七夕快乐！",
+      "❉风儿不曾问过细雨，",
+      "❉你要飞到哪里。",
+      "❉雨儿不曾问过花期，",
+      "❉守护烙在心底。",
+      "❉花儿害羞不语，",
+      "❉最美的那刻都留给你。",
+      "❉雨儿飘来飘去，",
+      "❉恰似知道我定在路前的你。",
+      "❉有道是，",
+      "❉花开花落颜色改。",
+      "❉可谁知，",
+      "❉岁岁年年他还来。",
+      "❉三两赤诚，点滴关怀。",
+      "❉矢志不渝汇成海。",
     ];
     let i = 0;
     let timer;
@@ -499,6 +504,9 @@
       };
     })();
     typingEffect();
+
+    var audio = document.getElementById("myAudio");
+    audio.play();
   </script>
   <script src="js/common.js"></script>
 </html>
